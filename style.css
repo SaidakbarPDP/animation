@@ -1,0 +1,35 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+    .car{
+    animation: car 2s linear infinite both;
+}
+@keyframes car{
+   
+        0% {
+            transform: translateX(0px);
+        }
+        40% {
+            transform: rotateY(0deg) translateX(180px) ;
+        }
+        50% {
+            transform: translateX(1000px) rotateY(180deg);
+        }
+        90% {
+            transform: translateX(100px)  rotateY(180deg);
+        }
+        100% {
+            transform: translate(0) rotateY(0) ;
+        }
+        
+        
+  
+}
